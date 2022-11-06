@@ -16,7 +16,7 @@ const { name, author } = require(join(__dirname, './package.json')) // https://w
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('Rull Ciaaa', {
+say('Rull Ceaaa', {
   font: 'chrome',
   align: 'center',
   colors: ['red', 'magenta']
