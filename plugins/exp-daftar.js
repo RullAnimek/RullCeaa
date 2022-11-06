@@ -63,7 +63,7 @@ const listMessage = {
   if (!name) throw 'Nama tidak boleh kosong (Alphanumeric)'
   if (!age) throw 'Umur tidak boleh kosong (Angka)'
   age = parseInt(age)
-  if (age > 30) throw 'WOI TUA (。-`ω´-)'
+  if (age > 30) throw 'Oi Tua (。-`ω´-)'
   if (age < 5) throw 'Halah dasar bocil'
   user.name = name.trim()
   user.age = age
@@ -95,7 +95,7 @@ const listMessage = {
 'previewType':'pdf',
 'title':global.titlebot,
 'body':global.titlebot,
-'thumbnail':await(await fetch('https://telegra.ph/file/aa6edd058acec4c2106fa.jpg')).buffer(),
+'thumbnail':await(await fetch('https://telegra.ph/file/c3952c44114f521105246.jpg')).buffer(),
 'sourceUrl':'https://chat.whatsapp.com/L6b4QjsMpgn8vpecqZltBe'}},
 'caption':cap,
 'footer':botdate,
