@@ -21,7 +21,7 @@ say('Rull Ciaaa', {
   align: 'center',
   colors: ['red', 'magenta']
 })
-say(`Bot By Irull Kun ><`, { 
+say(`SimpleBot`, { 
   font: 'console',
   align: 'center',
   colors: ['red', 'magenta']
