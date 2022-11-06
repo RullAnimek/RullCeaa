@@ -1,1 +1,1 @@
-worker :  npm install && node . --server
+worker: yarn && node . --server
