@@ -1,1 +1,1 @@
-worker: yarn && node . --server
+worker: node .
