@@ -2,7 +2,7 @@ import { addExif } from '../lib/sticker.js'
 
 
 let handler = async (m, { conn, text }) => {
-  if (!m.quoted) throw 'Quoted the sticker!'
+  if (!m.quoted) throw 'Reply sticker!'
   let stiker = false
   try {
     let [packname, ...author] = text.split('|')
@@ -22,7 +22,7 @@ let handler = async (m, { conn, text }) => {
 }
 handler.help = ['wm <packname>|<author>']
 handler.tags = ['sticker']
-handler.command = /^wm$/i
+handler.command = /^(watermark|wm|take|wms|takestick)$/i
 handler.premium = true
 
 export default handler
