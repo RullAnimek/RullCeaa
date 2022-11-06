@@ -11,7 +11,9 @@ let handler = async (m, { conn, usedPrefix }) => {
     let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakbendera2.json')).json()
   let json = src[Math.floor(Math.random() * src.length)]
     let caption = `
-Timeout *${(timeout / 1000).toFixed(2)} detik*
+🎮 Tebak Bendera 🎮
+
+Waktu *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}hben untuk bantuan
 Bonus: ${poin} XP
     `.trim()
@@ -33,6 +35,5 @@ handler.command = /^tebakbendera/i
 export default handler
 
 const buttons = [
-    ['Hint', '/hben'],
-    ['Nyerah', 'menyerah']
+    ['Bantuan', '/hben'],
 ]
