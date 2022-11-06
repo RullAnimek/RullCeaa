@@ -115,7 +115,7 @@ global.ultahowner = '1 Juni 2023'
 
 
 /*============== LOGO ==============*/
-global.thumb = 'https://telegra.ph/file/67ae6d1c5c762dc2938f8.jpg' //Main Thumbnail
+global.thumb = 'https://telegra.ph/file/6d4fbcd5567c1810ae812.jpg' //Main Thumbnail
 global.imagebot = 'https://telegra.ph/file/06c4e93a3d3f388b2642d.jpg'
 global.giflogo = 'https://i.ibb.co/jfZVKmC/babi2.jpg'
 global.giflogo2 = 'https://telegra.ph/file/6ab4daac226292a112540.jpg'
@@ -143,7 +143,7 @@ global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.shee
 global.dpdf = 'application/pdf'
 global.drtf = 'text/rtf'
 
-global.thumbdoc = 'https://telegra.ph/file/c113367b64684b5268802.jpg'
+global.thumbdoc = 'https://telegra.ph/file/6d4fbcd5567c1810ae812.jpg'
 
 /*=========== FAKE SIZE ===========*/
 global.fsizedoc = '99999999999999' // default 10TB
