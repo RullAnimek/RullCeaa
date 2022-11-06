@@ -128,5 +128,6 @@ const bucin = [
     "Yang penting itu kebahagiaan kamu, aku sih gak penting..",
     "Cuma satu keinginanku, dicintai olehmu..",
     "Aku tanpamu bagaikan ambulans tanpa wiuw wiuw wiuw.",
+    "Kenapa donat bolong, kalau yang utuh itu cintaku padamu.",
     "Cukup antartika aja yang jauh. Antarkita jangan."
 ]
