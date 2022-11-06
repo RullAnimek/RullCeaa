@@ -29,8 +29,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }
      }
      let math = max - xp
-let caption = `*YOUR PROFILE*
-*🏷️ Nama:* *(${name})* ${registered ? '(' + name + ') ' : ''} ( @${who.split("@")[0]} )
+let caption = `*PROFILE KAMU*
+*🗒️ Nama:* *(${name})* ${registered ? '(' + name + ') ' : ''} ( @${who.split("@")[0]} )
 *❤️ Pasangan:*  ${pasangan ? `@${pasangan.split("@")[0]}` : `Tidak Punya`}
 *💲 Money:* *RP* ${money}
 *🏆 Level* ${level}
