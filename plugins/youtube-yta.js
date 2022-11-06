@@ -2,7 +2,7 @@ let limit = 80
 import fetch from 'node-fetch'
 import { youtubedl, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper';
 let handler = async (m, { conn, args, isPrems, isOwner }) => {
-  if (!args || !args[0]) throw 'Uhm... urlnya mana?'
+  if (!args || !args[0]) throw 'Kirim link nya'
   let chat = global.db.data.chats[m.chat]
   const isY = /y(es)/gi.test(args[1])
   const { thumbnail, audio: _audio, title } = await youtubedl(args[0]).catch(async _ => await youtubedlv2(args[0])).catch(async _ => await youtubedlv3(args[0]))
@@ -45,8 +45,8 @@ let handler = async (m, { conn, args, isPrems, isOwner }) => {
 `.trim(), m, null, {
     asDocument: chat.useDocument, mimetype: 'audio/mp4', ptt: false, contextInfo: {
         externalAdReply: { showAdAttribution: true,
-            title: '▶︎ ━━━━━━━•─────────────── ', 
-            body: 'Selaramg memutar...',
+            title: '▶︎ ━━━━━━━•───── ', 
+            body: 'Sekarangmemutar...',
             description: 'Sekarang Memutar...',
             mediaType: 2,
           thumbnail: await (await fetch(thumb)).buffer(),
