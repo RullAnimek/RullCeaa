@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let timeout = 120000
-let poin = 4999
+let poin = 1000
 let handler = async (m, { conn, command, usedPrefix }) => {
 let imgr = flaaa.getRandom()
 
@@ -13,9 +13,12 @@ let imgr = flaaa.getRandom()
     let res = await fetch('https://anabotofc.herokuapp.com/api/kuis/siapaaku?apikey=AnaBot')
     let json = await res.json()
     let caption = `
+🎮 Twbak Kalimat 🎮
+
+Soal:
 ${json.soal}
 
-Timeout *${(timeout / 1000).toFixed(2)} detik*
+Waktu *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}hkal untuk bantuan
 Bonus: ${poin} XP
     `.trim()
@@ -33,10 +36,9 @@ Bonus: ${poin} XP
 handler.help = ['tebakkalimat']
 handler.tags = ['game']
 handler.command = /^tebakkalimat/i
-
+handler.limit = true
 export default handler
 
 const buttons = [
-    ['Hint', '/hkal'],
-    ['Nyerah', 'menyerah']
+    ['Bantuan', '/hkal'],
 ]
