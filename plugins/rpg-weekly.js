@@ -1,6 +1,6 @@
 const rewards = {
-  exp: 15000,
-  money: 35999,
+  exp: 10,
+  money: 1000,
   potion: 9,
 }
 const cooldown = 604800000
@@ -19,7 +19,6 @@ let handler = async (m) => {
 handler.help = ['weekly']
 handler.tags = ['rpg']
 handler.command = /^(weekly)$/i
-
 handler.cooldown = cooldown
 
 export default handler
