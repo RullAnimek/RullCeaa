@@ -16,13 +16,13 @@ let handler = async(m, { conn, text, usedPrefix, command }) => {
     surface : 404,
     message: `Nih My Mastah :3`, 
     orderTitle: ``,
-    thumbnail: await conn.resize(await (await fetch('https://i.ibb.co/jfZVKmC/babi2.jpg')).buffer(), 300, 200) //Gambarnye
+    thumbnail: await conn.resize(await (await fetch('https://telegra.ph/file/3d40dc23e03503942bb2e.jpg')).buffer(), 300, 200) //Gambarnye
 
     }
     }
     }
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-    let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
+    let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://telegra.ph/file/3d40dc23e03503942bb2e.jpg")
 	conn.p[id] = [
 	await conn.sendContact(m.chat, kontak2, ftroli, { contextInfo: { externalAdReply :{ 
      showAdAttribution: true, 
@@ -39,28 +39,28 @@ let handler = async(m, { conn, text, usedPrefix, command }) => {
     const detek = Math.floor( Kurang % (1000 * 60) / 1000)
 let cap = `Hay kak @${await m.sender.split('@')[0]}, itu nomor ownerku jangan dispam yah ^_^` 
   let buttonMessage= {
-'document':{'url':'https://youtu.be/hklv-Ysqqac'},
+'document':{'url':'https://chat.whatsapp.com/L6b4QjsMpgn8vpecqZltBe'},
 'mimetype':global.ddocx,
-'fileName':'「 ᴹᴿ᭄ King Of Bear ×፝֟͜× 」',
+'fileName':'「 Slime Bot Whatsapp 」',
 'fileLength':fsizedoc,
 'pageCount':fpagedoc,
 'contextInfo':{
 'forwardingScore':555,
 'isForwarded':true,
 'externalAdReply':{
-'mediaUrl':'https://youtu.be/hklv-Ysqqac',
+'mediaUrl':'https://chat.whatsapp.com/L6b4QjsMpgn8vpecqZltBe',
 'mediaType':2,
 'previewType':'pdf',
-'title':`💌 Ultah Owner: ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
-'body':`⚘ by ᴹᴿ᭄ King Of Bear ×፝֟͜×`,
+'title':`⛵ Slime Bot`,
+'body':`Slime Bot Whatsapp`,
 'thumbnail': await(await fetch(thumb)).buffer(),
-'sourceUrl':'https://youtu.be/hklv-Ysqqac'}},
+'sourceUrl':'https://chat.whatsapp.com/L6b4QjsMpgn8vpecqZltBe'}},
 'caption':cap,
-'footer':`Itu Owner Ku Yah Kak Jangan Sungkem Untuk Chat ;3
+'footer':`Itu kak nomor owner ku
 
 ${botdate}`,
 'buttons':[
-{'buttonId':'.tqto','buttonText':{'displayText':'Credits'},'type':1}
+{'buttonId':'.menu','buttonText':{'displayText':'Back To Menu'},'type':1}
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
