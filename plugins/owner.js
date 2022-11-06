@@ -1,10 +1,8 @@
-var handler = function(m) {
-	var data = global.owner.filter(([id, isCreator]) => id && isCreator)
-	this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
+function handler(m) {
+  let data = global.owner.filter(([id, isCreator]) => id && isCreator)
+  this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
 }
-handler.help = ['owner', 'creator']
-handler.tags = ['info']
+handler.alias = ['owner']
+handler.command = /^(owner|creator|own)$/i
 
-handler.command = /^(owner|creator)$/i
-
-module.exports = handler
+export default handler
