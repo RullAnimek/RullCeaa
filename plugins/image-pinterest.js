@@ -15,8 +15,9 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 }
 handler.help = handler.alias = ['pinterest']
 handler.tags = ['downloader']
-handler.command = /^(pinterest)$/i
-
+handler.command = /^(pinterest|pin|pindl|pinterestdl)$/i
+handler.private = true
+handler.limit = true
 export default handler
 
 async function pinterest(query) {
