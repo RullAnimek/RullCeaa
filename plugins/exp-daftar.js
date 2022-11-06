@@ -11,7 +11,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 	{
 	title: "📆Select Your Age Here !",
 	rows: [
-	    {title: "📛Random Years", rowId: '.daftar ' + namae + '.' + pickRandom(['30','29','28','27','26','25','24','23','22','21','20','19','18','17','16','15','14','13','12','11','10','9'])}
+	    {title: "Umur acak", rowId: '.daftar ' + namae + '.' + pickRandom(['30','29','28','27','26','25','24','23','22','21','20','19','18','17','16','15','14','13','12','11','10','9'])}
 	]
     },
     {
@@ -72,7 +72,7 @@ const listMessage = {
   let sn = createHash('md5').update(m.sender).digest('hex')
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
   let cap = `
-   S U K S E S
+   S U K S E S ✅
 
   ┌── ─── ─── ─── ───
 ▌❐ Nama: ${name}
@@ -81,27 +81,27 @@ const listMessage = {
 └── ─── ─── ─── ───
 `
   let buttonMessage= {
-'document':{'url':'https://youtu.be/pwLZpdfO8AU'},
+'document':{'url':'https://chat.whatsapp.com/L6b4QjsMpgn8vpecqZltBe'},
 'mimetype':global.ddocx,
-'fileName':'▢━━━━「 Registration 」━━━━▢',
+'fileName':'▢━━━━「 Daftar 」━━━━▢',
 'fileLength':fsizedoc,
 'pageCount':fpagedoc,
 'contextInfo':{
 'forwardingScore':555,
 'isForwarded':true,
 'externalAdReply':{
-'mediaUrl':'https://youtu.be/pwLZpdfO8AU',
+'mediaUrl':'https://chat.whatsapp.com/L6b4QjsMpgn8vpecqZltBe',
 'mediaType':2,
 'previewType':'pdf',
 'title':global.titlebot,
 'body':global.titlebot,
-'thumbnail':await(await fetch('https://telegra.ph/file/6ab4daac226292a112540.jpg')).buffer(),
-'sourceUrl':'https://youtu.be/pwLZpdfO8AU'}},
+'thumbnail':await(await fetch('https://telegra.ph/file/aa6edd058acec4c2106fa.jpg')).buffer(),
+'sourceUrl':'https://chat.whatsapp.com/L6b4QjsMpgn8vpecqZltBe'}},
 'caption':cap,
 'footer':botdate,
 'buttons':[
 {'buttonId':'.menu','buttonText':{'displayText':'▣ Mҽɳυ ▣'},'type':1},
-{'buttonId':'.salken','buttonText':{'displayText':'🎈Hαʅʅσ'},'type':1}
+{'buttonId':'.salken','buttonText':{'displayText':'Hαʅʅσ ⛵'},'type':1}
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
