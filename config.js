@@ -32,15 +32,15 @@ global.syt = 'https://youtube.com'
 global.sgh = 'https://github.com'
 global.sgc = 'https://chat.whatsapp.com'
 global.swa = 'wa.me/6285607831412'
-global.swb = 'https://'
+global.swb = 'https://google.com'
 global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
 
 /*============== PAYMENT ==============*/
 global.pdana = '6285607831412'
-global.povo = '-'
+global.povo = '0'
 global.pgopay = '6285607831412'
-global.ppulsa = '-'
-global.ppulsa2 = '-'
+global.ppulsa = '0'
+global.ppulsa2 = '0'
 global.psaweria = 'https://saweria.com'
 
 /*============== NOMOR ==============*/
@@ -53,7 +53,6 @@ global.nameown = 'Irull'
 /*============== STAFF ==============*/
 global.owner = [
   ['6285607831412', 'Irull', 'true']
-  ['6285607831410', 'Irull', 'true']
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
