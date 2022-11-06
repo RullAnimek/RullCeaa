@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let timeout = 180000
-let money = 5000
+let money = 100
 let limit = 1
 let handler = async (m, { conn, usedPrefix }) => {
     conn.susunkata = conn.susunkata ? conn.susunkata : {}
@@ -13,10 +13,13 @@ let handler = async (m, { conn, usedPrefix }) => {
     let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/susunkata.json')).json()
     let json = src[Math.floor(Math.random() * src.length)]
     let caption = `
+🎮 Susun Kata 🎮
+
+Soal:
 ${json.soal}
 
 📮Tipe : ${json.tipe}
-⏳Timeout *${(timeout / 1000).toFixed(2)} detik*
+⏳Waktu *${(timeout / 1000).toFixed(2)} detik*
 💬Ketik ${usedPrefix}suska untuk bantuan
 ➕Bonus: ${money} Money
 🎟️Limit: ${limit} Limit
