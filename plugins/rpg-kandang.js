@@ -17,7 +17,7 @@ let handler = async (m, {
 
 	let ndy = `
 ╭──────❨ *Kandang* ❩
-```├  🐂 = [ ${banteng} ] Ekor Banteng
+├  🐂 = [ ${banteng} ] Ekor Banteng
 ├ 🐅 = [ ${harimau} ] Ekor Harimau
 ├ 🐐 = [ ${kambing} ] Ekor Kambing
 ├ 🐘 = [ ${gajah} ] Ekor Gajah
@@ -27,9 +27,8 @@ let handler = async (m, {
 ├  🐒 = [ ${monyet} ] Ekor Monyet
 ├ 🐗 = [ ${babihutan} ] Ekor Babi Hutan
 ├ 🐓 = [ ${ayam} ] Ekor Ayam
-├ ️🐖 = [ ${babi} ] Ekor Babi```
-╰────────────────────
- `.trim()
+├ ️🐖 = [ ${babi} ] Ekor Babi
+╰────────────────────`.trim()
 	conn.reply(m.chat, ndy, m)
 }
 handler.help = ['kandang']
