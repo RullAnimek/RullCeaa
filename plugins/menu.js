@@ -38,40 +38,24 @@ let tags = {
   '': 'No Category',
 }
 const defaultMenu = {
-  before: `┏━━━ꕥ〔 *llı INFO USER ıll* 〕ꕥ━⬣ 
-┃✾ *Name:* %name
-┃✾ *Tag:* %name
-┃✾ *Status:* %prems
-┃✾ *Limit:* %limit
-┃✾ *Role:* %role
-┃✾ *Level:* %level [ %xp4levelup Xp For Levelup]
-┃✾ *Xp:* %exp / %maxexp
-┃✾ *Total Xp:* %totalexp
-┗━ꕥ
-┏━ꕥ〔 *llı TODAY ıll* 〕ꕥ━⬣
-┃✾ *Days:* %week %weton
-┃✾ *Date:* %date
-┃✾ *Jam:* ${wib2} WIB
-┃✾ *Islamic Date:* %dateIslamic
-┗━ꕥ
-┏━ꕥ〔 *llı INFO ıll* 〕ꕥ━⬣
-┃✾ *Bot Name:* %me
-┃✾ *Mode:* Public
-┃✾ *Platform:* Linux
-┃✾ *Type:* Node.Js
-┃✾ *Baileys:* Multi Device
-┃✾ *Uptime:* %muptime
-┃✾ *Database:* %rtotalreg dari %totalreg
-┗━ꕥ
-┏━ꕥ〔 *llı INFO COMMAND ıll* 〕ꕥ━⬣
-┃✾ *🅟* = Premium
-┃✾ *🅛* = Menggunakan Limit
-┗━ꕥ
-%readmore`.trimStart(),
+  before: `
+*︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿*
+*⛵ Info kamu*
+✙ *Nama:* %name
+✙ *Limit:* %limit
+✙ *Role:* %role
+✙ *Level:* %level [ %xp4levelup Xp For Levelup]
+*︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿*
+
+┌── ─── ─── ─── ───
+▌❐ *🅟* = Premium
+▌❐ *🅛* = Menggunakan Limit
+└── ─── ─── ─── ───
+`.trimStart(),
   header: '┏━━━ꕥ〔 *%category* 〕ꕥ━⬣\n┃',
     body: '┃🪐 %cmd %islimit %isPremium\n┃',
   footer: '┗━━━━━━━━━ꕥ\n',
-  after: `  ${'✧\n┏━📜 *Catatan* :\n┃ Jangan spam ya kak\n┗━━━━━━━━━━━━━━━━━━━ꕥ'}`,
+  after: `  ${'✧\n┏━ 📜 *Catatan* :\n┃ Jangan spam ya kak\n┗━━━━━━━━━━━━━━━━━━━ꕥ'}`,
 }
 let handler = async (m, { conn, usedPrefix, __dirname }) => {
   try {
