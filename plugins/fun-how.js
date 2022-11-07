@@ -9,6 +9,6 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 }
 handler.help = ['gay', 'pintar', 'cantik', 'ganteng', 'gabut', 'gila', 'lesbi', 'stress', 'bucin', 'jones', 'sadboy', 'sadgirl'].map(v => 'how' + v + ' siapa?')
 handler.tags = ['kerang', 'fun']
-handler.command = /^how(gay|pintar|cantik|ganteng|gabut|gila|lesbi|stress?|bucin|jones|sadboy|sadgirl|sadboys|sadgirls|howtitid)/i
+handler.command = /^how(gay|pintar|cantik|ganteng|gabut|gila|lesbi|stress?|bucin|jones|sadboy|sadgirl|sadboys|sadgirls|howtitid|howsaad|howstrees|howstreess)/i
 handler.limit = true
 export default handler
