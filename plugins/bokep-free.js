@@ -3,7 +3,7 @@ let info = `
      Enak aja mau gratis :v
 `.trim()
 
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '⚠️ *UP PREMIUM DULU BANG* ⚠️', 'status@broadcast')
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '⚠️ *UP PREMIUM DULU BG* ⚠️', 'status@broadcast')
 }
 handler.help = ['bokepfree']
 handler.tags = ['nsfw']
