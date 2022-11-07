@@ -39,13 +39,14 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-*︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿*
+︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵
 *⛵ Info kamu*
-✙ *Nama:* %name
-✙ *Limit:* %limit
-✙ *Role:* %role
-✙ *Level:* %level [ %xp4levelup Xp For Levelup]
-*︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿*
+✙ Nama: %name
+✙ Limit: %limit
+✙ Role: %role
+✙ Level: %level [ %xp4levelup Xp For Levelup]
+✙ http://ẉa.me/𝕾𝖑𝖎𝖒𝖊𝔅𝔬𝔱
+︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵
 
 ┌── ─── ─── ─── ───
 ▌❐ *🅟* = Premium
@@ -55,7 +56,7 @@ const defaultMenu = {
   header: '┏━━━ꕥ〔 *%category* 〕ꕥ━⬣\n┃',
     body: '┃🪐 %cmd %islimit %isPremium\n┃',
   footer: '┗━━━━━━━━━ꕥ\n',
-  after: `  ${'✧\n┏━ 📜 *Catatan* :\n┃ Jangan spam ya kak\n┗━━━━━━━━━━━━━━━━━━━ꕥ'}`,
+  after: `  ${'✧\n┏━ 📜 Nᴏᴛᴇ :\n┃ Jangan spam ya kak\n┗━━━━━━━━━━━━━━━━━━━ꕥ'}`,
 }
 let handler = async (m, { conn, usedPrefix, __dirname }) => {
   try {
