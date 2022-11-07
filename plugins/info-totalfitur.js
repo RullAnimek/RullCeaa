@@ -7,7 +7,7 @@ let totalf = Object.values(global.plugins).filter(
 contextInfo: { externalAdReply :{
                         mediaUrl: '',
                         mediaType: 2,
-                        description: 'anu',
+                        description: '📮 Dimas Anjay mabar',
                         title: bottime,
                         body: 'Total Cintaku Padamu',          previewType: 0,
                         thumbnail: fs.readFileSync("./thumbnail.jpg"),
