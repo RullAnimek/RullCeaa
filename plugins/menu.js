@@ -45,7 +45,6 @@ const defaultMenu = {
 ✙ Limit: %limit
 ✙ Role: %role
 ✙ Level: %level [ %xp4levelup Xp For Levelup]
-✙ http://ẉa.me/𝕾𝖑𝖎𝖒𝖊𝔅𝔬𝔱
 ︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵
 
 ┌── ─── ─── ─── ───
@@ -169,11 +168,11 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
     conn.sendButton(m.chat,
 `${wish()} ${name}
 `, text.trim(), flaa, [
-      [`ꜱᴇᴡᴀʙᴏᴛ`, `${usedPrefix}sewa`],
-      [`۪۪ᴀᴜᴛʜᴏʀ ʙᴏᴛ`, `${usedPrefix}owner`]
+      [`𝘈𝘯𝘰𝘯𝘺𝘮𝘰𝘶𝘴 𝘊𝘩𝘢𝘵`, `${usedPrefix}anonchat`],
+      [`۪۪𝘖𝘸𝘯𝘦𝘳 𝘉𝘰𝘵`, `${usedPrefix}owner`]
     ], m, { 'document':{'url':'https://chat.whatsapp.com/L6b4QjsMpgn8vpecqZltBe'},
 'mimetype':global.dpdf,
-'fileName':'「 Slime Bot 」',
+'fileName':'http://ẉa.me/𝕾𝖑𝖎𝖒𝖊𝔅𝔬𝔱',
 'fileLength':fsizedoc,
 'pageCount':fpagedoc,
 'previewType':'pdf',
