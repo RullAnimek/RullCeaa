@@ -13,19 +13,19 @@ const message = {
                 {
                     urlButton: {
                         displayText: 'Customer Service',
-                        url: 'wa.me/6288279268363',
+                        url: 'wa.me/6285607831412',
                     }
                 },
                 {
                     urlButton: {
                         displayText: '📞 Owner',
-                        url: 'https://wa.me/6288279268363',
+                        url: 'https://wa.me/6285607831412',
 
                     }
                 },
                 {
                     quickReplyButton: {
-                        displayText: 'OKE👍',
+                        displayText: 'Okay',
                         id: 'Ok'
                     }
                 },
