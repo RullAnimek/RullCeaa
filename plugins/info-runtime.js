@@ -14,11 +14,7 @@ const time = moment.tz('Asia/Jakarta').format('HH')
     const onet = Math.floor( Kurang % (1000 * 60 * 60) / (1000 * 60))
     const detek = Math.floor( Kurang % (1000 * 60) / 1000)
   let name = await conn.getName(m.sender)
-  let runnya = `┏━━━ꕥ〔 *RUNTIME BOT* 〕ꕥ━⬣
-┃✾ ⏲️ Waktu: ${time} WIB
-┃✾ 💌 Aktif Selama : ${uptime}
-┃✾ 🌹 Tag : ${name}
-┗━━━━━━ꕥ`
+  let runnya = `Aktif Selama : ${uptime}`
 	let _muptime
     if (process.send) {
       process.send('uptime')
@@ -28,16 +24,16 @@ const time = moment.tz('Asia/Jakarta').format('HH')
       }) * 1000
     }
     let muptime = clockString(_muptime)
- await conn.sendButton(m.chat, runnya,wm + '\n\n' + botdate, intro, [['🥞MENU','.listmenu']], m, {
+ await conn.sendButton(m.chat, runnya,wm + '\n\n' + botdate, intro, [['Slime Bot menu','.menu']], m, {
         contextInfo: {
             externalAdReply: {
                 mediaUrl: '',
                         mediaType: 2,
                         description: 'anu',
-                        title: `💌 Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
-                        body: `Subscribe YT My Bestie`,                                       previewType: 0,
-                        thumbnail: await (await fetch(`https://i.ibb.co/jfZVKmC/babi2.jpg`)).buffer(),
-                        sourceUrl: 'https://youtu.be/hklv-Ysqqac'
+                        title: `🎧 Slime Bot`,
+                        body: `By Slime Bot`,                                       previewType: 0,
+                        thumbnail: await (await fetch(`https://telegra.ph/file/53429e5795adc5266fe97.jpg`)).buffer(),
+                        sourceUrl: 'tiktok.com/@originevils'
             }
         }
     })
