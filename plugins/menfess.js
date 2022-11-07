@@ -22,7 +22,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (mf) return !0
     try {
     	let id = + new Date
-        let txt = `Hai @${data.jid.split('@')[0]} 👋🏻, kamu menerima pesan Menfess nih.\n\nDari: *${name}*\nPesan: \n${pesan}\n\nMau balas pesan ini kak? bisa kak. kakak tinggal ketik pesan kakak nanti saya sampaikan ke *${name}*.`.trim();
+        let txt = `Hai @${data.jid.split('@')[0]} 👋🏻, kamu menerima pesan Menfess nih.\n\nDari: *${name}*\nPesan: \n${pesan}\n\n📮 Note: Bot hanya menyampaikan pesan dari pengirim`.trim();
         await conn.sendButton(data.jid, txt, wm, ['Balas Pesan', '.balasmenfess'], null)
         .then(() => {
             m.reply('Berhasil mengirim pesan menfess.')
