@@ -38,7 +38,7 @@ ${pickRandom(global.pantun)}
 }
 handler.help = ['pantun']
 handler.tags = ['quotes']
-handler.command = /^(bacot)$/i
+handler.command = /^(bacot|pantun)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
@@ -57,5 +57,5 @@ function pickRandom(list) {
 }
 
 global.pantun = [
-' buah semangka masuk botol, muka anda kaya kontol.',
+'Gaatau males pengen beli truk',
 ]
