@@ -4,7 +4,7 @@ let handler  = async (m, { conn }) => {
 handler.help = ['iqtest']
 handler.tags = ['game']
 handler.command = /^(iqtest)$/i
-handler.owner = false
+handler.limit = true
 
 export default handler
 
