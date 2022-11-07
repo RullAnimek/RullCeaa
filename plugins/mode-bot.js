@@ -11,15 +11,15 @@ let handler = async (m, { conn, args, command }) => {
 let totalf = Object.values(global.plugins).filter(
     (v) => v.help && v.tags
   ).length;
- await conn.sendButton(m.chat, `_🎐Pilih Mode bot nya kak..._\n_Off atau On di group_\n`,wm + '\n\n' + botdate, thumbdoc, [['🧿ON','.boton'],['🎀OFF','botoff']], m, {
+ await conn.sendButton(m.chat, `_Pilih Mode bot nya kak..._\n_Off atau On di group_\n`,wm + '\n\n' + botdate, thumbdoc, [['🟩 ON','.boton'],['🟥 OFF','botoff']], m, {
 contextInfo: { externalAdReply :{
                         mediaUrl: '',
                         mediaType: 2,
                         description: 'anu',
-                        title: `💌 Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
-                        body: `Subscribe YT My Bestie`,          previewType: 0,
-                        thumbnail: await (await fetch(`https://i.ibb.co/jfZVKmC/babi2.jpg`)).buffer(),
-                        sourceUrl: 'https://youtu.be/pwLZpdfO8AU'
+                        title: `Hai kak 👋🏻`,
+                        body: `Slime Bot Whatsapp`,          previewType: 0,
+                        thumbnail: await (await fetch(`https://telegra.ph/file/4edce6f759d2ee400c05e.jpg`)).buffer(),
+                        sourceUrl: 'https://nekopoi.care'
                       }}
 })
 }
