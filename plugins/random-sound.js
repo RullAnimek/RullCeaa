@@ -1,5 +1,5 @@
 let handler = async (m, { conn, command }) => {
-m.reply('⚘ ᴄʀᴇᴀᴛᴇ ʙʏ ʀʏʜᴀʀ')
+m.reply('By Slime Bot Whatsapp')
 let audio = `https://raw.githubusercontent.com/saipulanuar/Api-Github/main/audio/${command}.mp3`
 await conn.sendFile(m.chat, audio, 'error.mp3', null, m, true)
 }
@@ -77,5 +77,6 @@ handler.command = handler.help = [
 'yoyowaimo'
 ]
 handler.tags = ['random']
-handler.owner = false
+handler.limit = true
+
 export default handler
