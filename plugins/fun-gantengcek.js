@@ -41,6 +41,6 @@ global.ganteng = [
 '📮Ganteng Level : 77%\n\nGak akan Salah Lagi dah Om',
 '📮Ganteng Level : 83%\n\nDijamin Cewek gak akan kecewa Om',
 '📮Ganteng Level : 89%\n\nCewek2 pasti bakalan pingsan klo ngeliat lo!',
-'📮Ganteng Level : 94%\n\nAARRGGHHH!!!',
-'📮Ganteng Level : 100%\n\nLU EMANG COWOK TERGANTENG, KAYA PACARNYA ELAINA',
+'📮Ganteng Level : 94%\n\nGG',
+'📮Ganteng Level : 100%\n\nMax Bang 👍🏻',
 ]
