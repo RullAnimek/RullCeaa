@@ -1065,7 +1065,7 @@ RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan fitur i
         restrict: `${nmsr}\n
 Fitur ini di *disable* !`
     }[type]
-    if (msg) return conn.sendButton(m.chat, danied, msg, `${imgr + 'Accses Danied'}`, [['Menu', '.menu'],['Creator', '.menu']],m)
+    if (msg) return conn.sendButton(m.chat, danied, msg, `${imgr + 'Accses Danied'}`, [['Menu', '.menu'],['Creator', '.owner']],m)
     
      let msgg = {
     	unreg: `${nmsr}\nSilahkan daftar ke database terlebih dahulu untuk menggunakan bot ini lebih lanjut *Click button di bawah*\n\n*Kalian bisa ikuti langkah verify selanjutnya*\n\nLAKI-LAKI ATAU PEREMPUAN ?`
