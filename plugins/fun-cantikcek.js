@@ -8,7 +8,7 @@ handler.owner = false
 handler.mods = false
 handler.premium = false
 handler.group = false
-handler.private = false
+handler.limit = true
 
 handler.admin = false
 handler.botAdmin = false
@@ -34,13 +34,13 @@ global.cantik = [
 'Cantik Level : 56%\n\nLu Setengah Cantik :v',
 'Cantik Level : 64%\n\nCukuplah',
 'Cantik Level : 71%\n\nLumayan cantik juga lu ya',
-'Cantik Level : 1%\n\nAWOAKAK BURIQQQ!!!',
-'Cantik Level : 1%\n\nAWOAKAK BURIQQQ!!!',
-'Cantik Level : 1%\n\nAWOAKAK BURIQQQ!!!',
+'Cantik Level : 1%\n\nSabarr',
+'Cantik Level : 1%\n\nSabarr',
+'Cantik Level : 1%\n\nSabarr',
 'Cantik Level : 1%\n\nAWOAKAK BURIQQQ!!!',
 'Cantik Level : 77%\n\nGak akan Salah Lagi dah neng',
 'Cantik Level : 83%\n\nDijamin cowok gak akan kecewa neng',
 'Cantik Level : 89%\n\ncowok2 pasti auto salfok klo ngeliat lo!',
 'Cantik Level : 94%\n\nAARRGGHHH!!!',
-'Cantik Level : 100%\n\nLU EMANG CEWEK TERCANTIK YANG PERNAH GW LIAT!!!',
+'Cantik Level : 100%\n\nBehh cantik nya maksimal!!!',
 ]
