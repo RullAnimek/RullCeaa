@@ -1,5 +1,5 @@
 import { family100 } from '@bochilteam/scraper'
-const winScore = 4999
+const winScore = 100
 async function handler(m) {
     this.game = this.game ? this.game : {}
     let id = 'family100_' + m.chat
@@ -9,6 +9,7 @@ async function handler(m) {
     }
     const json = await family100()
     let caption = `
+🎮 Family 100 🎮
 *Soal:* ${json.soal}
 Terdapat *${json.jawaban.length}* jawaban${json.jawaban.find(v => v.includes(' ')) ? `
 (beberapa jawaban terdapat spasi)
@@ -17,7 +18,7 @@ Terdapat *${json.jawaban.length}* jawaban${json.jawaban.find(v => v.includes(' '
     `.trim()
     this.game[id] = {
         id,
-        msg: await this.sendButton(m.chat, caption, author, null, [['Nyerah', 'nyerah']], m),
+        msg: await this.sendButton(m.chat, caption, author, null, [['Nyerah 🏳️', 'nyerah']], m),
         ...json,
         terjawab: Array.from(json.jawaban, () => false),
         winScore,
@@ -26,5 +27,5 @@ Terdapat *${json.jawaban.length}* jawaban${json.jawaban.find(v => v.includes(' '
 handler.help = ['family100']
 handler.tags = ['game']
 handler.command = /^family100$/i
-
+handler.limit = true
 export default handler
