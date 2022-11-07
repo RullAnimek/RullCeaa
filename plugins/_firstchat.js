@@ -4,19 +4,19 @@ export async function before(m) {
     if (m.chat.endsWith('broadcast') || m.fromMe || m.isGroup) return
 
     let user = global.db.data.users[m.sender]
-    let txt = `👋Hai, ${ucapan()}
+    let txt = `Halo, ${ucapan()}
 
-${user.banned ? '📮Maaf, kamu dibanned & Tidak bisa menggunakan bot ini lagi' : `💬 Ada yg bisa ${this.user.name} bantu?`}`.trim()
+${user.banned ? 'Maaf, kamu dibanned & Tidak bisa menggunakan bot ini lagi' : `💬 Ada yg bisa ${this.user.name} bantu?`}`.trim()
 
     if (new Date() - user.pc < 21600000) return // waktu ori 21600000 (6 jam)
-    await this.sendButton(m.chat, txt, user.banned ? wm : '📮Note: Jangan spam bot nya', [user.banned ? 'OWNER' : 'OWNER', user.banned ? '.owner' : '.owner'], m)
+    await this.sendButton(m.chat, txt, user.banned ? wm : 'Jangan spam ya kak\n\nKetik #menu untuk menampilkan menu', [user.banned ? 'OWNER' : 'OWNER', user.banned ? '.owner' : '.owner'], m)
     user.pc = new Date * 1
 }
 
 
 function ucapan() {
     const time = moment.tz('Asia/Jakarta').format('HH')
-    let res = "Selamat dinihari 🌆"
+    let res = "Selamat dini hari 🌆"
     if (time >= 4) {
         res = "Selamat pagi 🌄"
     }
