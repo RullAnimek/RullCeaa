@@ -21,12 +21,6 @@ ${pickRandom(global.pantun)}
                     }
                 },
                 {
-                    urlButton: {
-                        displayText: ' SUBSCRIBE ME',
-                        url: 'https://youtu.be/pwLZpdfO8AU'
-                    }
-                },
-                {
                     quickReplyButton: {
                         displayText: 'NEXT',
                         id: '.bacot'
