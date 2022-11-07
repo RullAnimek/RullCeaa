@@ -1,7 +1,7 @@
 const items = {
     buy: {
         limit: {
-            exp: 999
+            exp: 30000
         },
         potion: {
             money: 1250
@@ -412,10 +412,10 @@ let imgr = flaaa.getRandom()
     let buttons = ''
     text = (command.toLowerCase() == 'buy' ?
 (`
-*${htki} Buy/Beli ${htka}*
+*${htki} Buy atau Beli ${htka}*
 `.trim()) : 
 (`
-*${htki} Sell/Jual ${htka}*
+*${htki} Sell atau Jual ${htka}*
 `.trim())
 )
     footer = (command.toLowerCase() == 'buy' ?
