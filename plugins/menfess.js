@@ -22,10 +22,10 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (mf) return !0
     try {
     	let id = + new Date
-        let txt = `Hai @${data.jid.split('@')[0]} 👋🏻, kamu menerima pesan Menfess nih.\n\nDari: *${name}*\nPesan: \n${pesan}\n\n📮 Note: Bot hanya menyampaikan pesan dari pengirim`.trim();
+        let txt = `Hai @${data.jid.split('@')[0]} 👋🏻, kamu menerima pesan Menfess nih.\n\nDari: *${name}*\nPesan: \n${pesan}\n\n📮 Kirim pesan untuk menjawab pesan ini, nanti bot akan kirim balasan ke pengirim pesan`.trim();
         await conn.sendButton(data.jid, txt, wm, ['Menu Bot', 'menu'], null)
         .then(() => {
-            m.reply('Berhasil mengirim pesan menfess.')
+            m.reply('✅ Berhasil mengirim pesan menfess.')
             conn.menfess[id] = {
                 id,
                 dari: m.sender,
