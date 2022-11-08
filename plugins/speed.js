@@ -120,33 +120,33 @@ let handler = async (m, { conn, isRowner}) => {
 ${Math.round(neww - old)}ms
 ${speed}ms
 
-- *ʀ ᴜ ɴ ᴛ ɪ ᴍ ᴇ* -
+- *ʀᴜɴᴛɪᴍᴇ ʙᴏᴛ* -
 ${muptime}
 ${readMore}
 - *ᴄ ʜ ᴀ ᴛ s* -
-• *${groupsIn.length}* Group Chats
-• *${groupsIn.length}* Groups Joined
-• *${groupsIn.length - groupsIn.length}* Groups Left
-• *${chats.length - groupsIn.length}* Personal Chats
-• *${chats.length}* Total Chats
+• *${groupsIn.length}* ɢʀᴜʙ ᴄʜᴀᴛ
+• *${groupsIn.length}* ʙᴇʀɢᴀʙᴜɴɢ ᴋᴇ ɢʀᴜʙ
+• *${groupsIn.length - groupsIn.length}* ᴋᴇʟᴜᴀʀ ᴅᴀʀɪ ɢʀᴜʙ
+• *${chats.length - groupsIn.length}* ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ
+• *${chats.length}* ᴛᴏᴛᴀʟ ᴄʜᴀᴛ
 
 - *s ᴇ ʀ ᴠ ᴇ ʀ* -
 *🛑 Rᴀᴍ:* ${ramUsed} / ${_ramTotal}(${/[0-9.+/]/g.test(ramUsed) &&  /[0-9.+/]/g.test(ramTotal) ? Math.round(100 * (ramUsed / ramTotal)) + '%' : NotDetect})
-*🔵 FʀᴇᴇRᴀᴍ:* ${format(freemem())}
+*🟢 Rᴀᴍ ʏᴀɴɢ ᴋᴏsᴏɴɢ:* ${format(freemem())}
 
 *🔭 ᴘʟᴀᴛғᴏʀᴍ:* ${os.platform()}
-*🧿 sᴇʀᴠᴇʀ:* ${os.hostname()}
+*⚙️ sᴇʀᴠᴇʀ:* ${os.hostname()}
 *💻 ᴏs:* ${OS}
 *📍 ɪᴘ:* ${ip}
-*🌎 ᴄᴏᴜɴᴛʀʏ:* ${cr}
-*💬 ᴄᴏᴜɴᴛʀʏ ᴄᴏᴅᴇ:* ${cc}
+*🌎 ɴᴇɢᴀʀᴀ:* ${cr}
+*💬 ᴋᴏᴅᴇ ɴᴇɢᴀʀᴀ:* ${cc}
 *📡 ᴄᴘᴜ ᴍᴏᴅᴇʟ:* ${cpuModel}
-*🔮 ᴄᴘᴜ ᴄᴏʀᴇ:* ${cpuCore} Core
+*📜 ᴄᴘᴜ ᴄᴏʀᴇ:* ${cpuCore} Core
 *🎛️ ᴄᴘᴜ:* ${cpuPer}%
-*⏰ ᴛɪᴍᴇ sᴇʀᴠᴇʀ:* ${times}
+*🕰️ ᴛɪᴍᴇ sᴇʀᴠᴇʀ:* ${times}
 
 ${readMore}
-*${htjava} ɴᴏᴅᴇJS ᴍᴇᴍᴏʀʏ ᴜsᴀɢᴇ*
+*${htjava} ɴᴏᴅᴇJS ᴍᴇᴍᴏʀɪ ᴅɪɢᴜɴᴀᴋᴀɴ*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
 
 `,m)
@@ -165,5 +165,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [d, ' *Days ☀️*\n ', h, ' *Hours 🕐*\n ', m, ' *Minute ⏰*\n ', s, ' *Second ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
+  return [d, ' *Hari 🌄*\n ', h, ' *Jam ⏲️*\n ', m, ' *Menit ⌛*\n ', s, ' *Detik ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
 }
