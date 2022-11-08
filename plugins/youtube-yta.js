@@ -46,7 +46,7 @@ let handler = async (m, { conn, args, isPrems, isOwner }) => {
     asDocument: chat.useDocument, mimetype: 'audio/mp4', ptt: false, contextInfo: {
         externalAdReply: { showAdAttribution: true,
             title: '▶︎ ━━━━━━━•───── ', 
-            body: 'Seoanat menikmati 🎧',
+            body: 'Selamat menikmati 🎧',
             description: 'Sekarang Memutar...',
             mediaType: 2,
           thumbnail: await (await fetch(thumb)).buffer(),
