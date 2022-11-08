@@ -1,11 +1,4 @@
-/*
-# elaina - UserBot
-# Credit Sc Ori By ZeeoneOfc
-# Subscribe Yt RflBotz Ofc
-# This file is a part of < https://github.com/zeeoneofc/elaina/ >
-*/ 
 
-// WhatsApp api
 require('../settings/config.js')
 const
 	{
