@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let timeout = 120000
-let poin = 4999
+let poin = 100
 let handler = async (m, { conn, command, usedPrefix }) => {
 let imgr = flaaa.getRandom()
 
@@ -13,9 +13,11 @@ let imgr = flaaa.getRandom()
     let src = await (await fetch('https://raw.githubusercontent.com/qisyana/scrape/main/tebakgame.json')).json()
     let json = src[Math.floor(Math.random() * src.length)]
   let caption = `
+🎮 Tebak Game 🎮
+
 Logo apakah ini?
 
-Timeout *${(timeout / 1000).toFixed(2)} detik*
+Waktu *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}hgame untuk bantuan
 Bonus: ${poin} XP
     `.trim()
@@ -33,10 +35,10 @@ Bonus: ${poin} XP
 handler.help = ['tebakgame']
 handler.tags = ['game']
 handler.command = /^tebakgame/i
+handler.limit = true
 
 export default handler
 
 const buttons = [
-    ['Hint', '/hgame'],
-    ['Nyerah', 'menyerah']
+    ['Hint/Bantuan', '/hgame'],
 ]
