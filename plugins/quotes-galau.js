@@ -1,9 +1,10 @@
 let handler = async (m, { conn, usedPrefix, command }) => {
-    await conn.sendButton(m.chat, `“${pickRandom(global.galau)}”`, '© by xynoz', 'Galau', [[`${usedPrefix + command}`]], m)
+    await conn.sendButton(m.chat, `“${pickRandom(global.galau)}”`, 'By SlimeBot\n\nWhatsAppボット', 'Galau 📌', [[`${usedPrefix + command}`]], m)
 }
 handler.help = ['galau']
 handler.tags = ['quotes']
 handler.command = /^(galau)$/i
+handler.limit = true
 export default handler 
 
 function pickRandom(list) {
