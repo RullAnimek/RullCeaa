@@ -5,11 +5,11 @@ let handler = async (m, { conn, args }) => {
   m.reply('ᴘʀᴏꜱᴇꜱ...')
   let res = `https://api.lolhuman.xyz/api/tiktokmusic?apikey=2548ae0a1ad4d3233004f218&url=${args[0]}`
   conn.sendFile(m.chat, res, 'xynz.opus', `┏┉━━━━━━━━━━━❏
-┆ *TIKTOK MP3*
+┆ *Tiktok Mp3*
 ├┈┈┈┈┈┈┈┈┈┈┈
 ┆• *Judul:* 
 │• *Type:* MP3
-┆• *📥 Ukuran File:* 
+┆• *🗃️ Ukuran File:* 
 └❏`, m, false)
 }
 handler.help = ['ttaudio <teks>']
