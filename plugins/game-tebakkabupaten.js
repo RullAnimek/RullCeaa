@@ -17,6 +17,8 @@ Kabupaten apakah ini?
 Waktu *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}hkab untuk bantuan
 Hadiah: ${poin} XP
+
+© Slime Bot Whatsapp By Rull
     `.trim()
     conn.tebakkabupaten[id] = [
         await conn.sendButton(m.chat, caption, author, json.url, buttons, m),
