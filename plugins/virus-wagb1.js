@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 let text = `${htki} *DOWNLOAD* ${htka}
 
-     WhatsApp GB 🈲
+     WhatsApp GB 🌸
      Pasword: sabar
     
     --------Kelebihan--------
@@ -24,8 +24,8 @@ let text = `${htki} *DOWNLOAD* ${htka}
 • Dll
 `
 const templateButtons = [
-    {index: 1, urlButton: {displayText: '↗️Clone', url: 'https://cararegistrasi.com/QXwAxmu'}},
-    {index: 1, urlButton: {displayText: '↗️Unclone', url: 'https://cararegistrasi.com/aYyZ1Gyt5'}},
+    {index: 1, urlButton: {displayText: '🔗 Clone', url: 'https://cararegistrasi.com/QXwAxmu'}},
+    {index: 1, urlButton: {displayText: '🔗 Unclone', url: 'https://cararegistrasi.com/aYyZ1Gyt5'}},
 ]
 let tm = {
 text: text,
