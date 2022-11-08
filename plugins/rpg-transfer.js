@@ -38,7 +38,7 @@ ${item.map(v => `${rpg.emoticon(v)}${v}`.trim()).join('\n')}
         message: m,
         type,
         count,
-        timeout: setTimeout(() => (m.reply('Timeout'), delete confirmation[m.sender]), 60 * 1000)
+        timeout: setTimeout(() => (m.reply('Timeout'), delete confirmation[m.sender]), 60 * 5000)
     }
 }
 
