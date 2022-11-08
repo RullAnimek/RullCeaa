@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, command }) => {
 	let url = 'https://kannxapi.herokuapp.com/api/randomimage/husbu'
-	conn.sendButton(m.chat, 'Donw', wm, await(await fetch(url)).buffer(), [['Next',`.${command}`]],m)
+	conn.sendButton(m.chat, 'Done', wm, await(await fetch(url)).buffer(), [['Next',`.${command}`]],m)
 }
 handler.command = /^(husbu)$/i
 handler.tags = ['anime']
