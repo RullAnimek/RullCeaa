@@ -2,7 +2,8 @@ const items = [
     'money', 'bank', 'potion', 'trash', 'wood',
     'rock', 'string', 'petFood', 'emerald',
     'diamond', 'gold', 'iron', 'common',
-    'uncommon', 'mythic', 'legendary', 'pet', 'limit',
+    'uncommon', 'mythic', 'legendary', 'pet',
+    'exp', 'limit',
 ]
 let confirmation = {}
 async function handler(m, { conn, args, usedPrefix, command }) {
@@ -12,7 +13,7 @@ async function handler(m, { conn, args, usedPrefix, command }) {
     let lol = `Use format ${usedPrefix}${command} [type] [value] [number]
 example ${usedPrefix}${command} money 9999 @62×××××
 
-📍 Transferable items
+📍 Item yg bisa di transfer 
 ${item.map(v => `${rpg.emoticon(v)}${v}`.trim()).join('\n')}
 `.trim()
     const type = (args[0] || '').toLowerCase()
