@@ -38,9 +38,9 @@ global.wibu = [
 'Wibu Level : 77%\n\nGak akan Salah Lagi dah Wibunya lu',
 'Wibu Level : 83%\n\nDijamin Sepuhnya Wibu',
 'Wibu Level : 89%\n\nFix Wibu Elite!',
-'Wibu Level : 94%\n\nUdah Elite Sih Ini😂',
+'Wibu Level : 94%\n\nUdah Elite Sih Ini 🌚',
 'Wibu Level : 100%\n\nBAU BAWANGNYA SAMPE SINI CUY!!!',
 'Wibu Level : 100%\n\nBAU BAWANGNYA SAMPE SINI CUY!!!',
 'Wibu Level : 100%\n\nBAU BAWANGNYA SAMPE SINI CUY!!!',
-'Wibu Level : 100%\n\nBAU BAWANGNYA SAMPE SINI CUY!!!',
+'Wibu Level : 100%\n\nBAU BAWANGNYA SAMPE SINI CUY 🧄!!!',
 ]
