@@ -1,7 +1,7 @@
 import { siapakahaku } from '@bochilteam/scraper'
 
 let timeout = 120000
-let poin = 4999
+let poin = 1000
 let handler = async (m, { conn, usedPrefix }) => {
     conn.siapakahaku = conn.siapakahaku ? conn.siapakahaku : {}
     let id = m.chat
@@ -11,16 +11,18 @@ let handler = async (m, { conn, usedPrefix }) => {
     }
     const json = await siapakahaku()
     let caption = `
+🎮 Siapakah aku 🎮
 Siapakah aku? ${json.soal}
-Timeout *${(timeout / 1000).toFixed(2)} detik*
+Waktu *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}who untuk bantuan
 Bonus: ${poin} XP
+Jawab soal dengan reply pesan ini (untuk semua menu game)
 `.trim()
     conn.siapakahaku[id] = [
-        await conn.sendButton(m.chat, caption, author, ['hint', `${usedPrefix}who`], m),
+        await conn.sendButton(m.chat, caption, author, ['Bantuan ✨', `${usedPrefix}who`], m),
         json, poin,
         setTimeout(() => {
-            if (conn.siapakahaku[id]) conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, author, ['siapahaku', '/siapakahaku'], conn.siapakahaku[id][0])
+            if (conn.siapakahaku[id]) conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, author, ['Main Lagi', '/siapakahaku'], conn.siapakahaku[id][0])
             delete conn.siapakahaku[id]
         }, timeout)
     ]
@@ -28,5 +30,6 @@ Bonus: ${poin} XP
 handler.help = ['siapakahaku']
 handler.tags = ['game']
 handler.command = /^siapa(kah)?aku/i
+handler.limit = true
 
 export default handler
