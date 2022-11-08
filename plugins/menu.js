@@ -168,7 +168,6 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
     conn.sendButton(m.chat,
 `${wish()} ${name}
 `, text.trim(), flaa, [
-      [`𝘈𝘯𝘰𝘯𝘺𝘮𝘰𝘶𝘴 𝘊𝘩𝘢𝘵`, `${usedPrefix}anonchat`],
       [`۪۪𝘖𝘸𝘯𝘦𝘳 𝘉𝘰𝘵`, `${usedPrefix}owner`]
     ], m, { 'document':{'url':'https://chat.whatsapp.com/L6b4QjsMpgn8vpecqZltBe'},
 'mimetype':global.dpdf,
