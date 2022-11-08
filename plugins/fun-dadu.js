@@ -8,7 +8,7 @@ const dir = [
   'https://tinyurl.com/ygpxka9q'
 ];
 let handler = async (m, { conn }) => {
-conn.sendSticker(m.chat, dir[Math.floor(Math.random() * dir.length)], 'sticker.webp', '', m)
+conn.sendfile(m.chat, dir[Math.floor(Math.random() * dir.length)], 'sticker.webp', m)
 }
 handler.help = ['dadu']
 handler.tags = ['game']
