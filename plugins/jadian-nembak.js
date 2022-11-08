@@ -11,10 +11,10 @@ let ps = groupMetadata.participants.map(v => v.id)
     m.reply(`*Ciee...* ${toM(a)} ❤️ ${toM(b)}`, null, {
         mentions: [a, b]
     })
-    */
-    let caption = `*Love Message...* ${toM(a)} ❤️ ${toM(b)}\n${await ktnmbk.getRandom()}`
+   
+    let caption = `*Love Message...* ${toM(a)} 💘 ${toM(b)}\n${await ktnmbk.getRandom()}`
     await conn.sendButton(m.chat, caption, wm, null, [['jodohnya', `${usedPrefix}jodohnya`],['jodohku', `${usedPrefix}jodohku`]], m, { mentions: conn.parseMention(caption) })
-    }
+    }*/
 	if(isNaN(text)) {
   	var number = text.split`@`[1]
   } else if(!isNaN(text)) {
