@@ -1,15 +1,10 @@
-
-import { sticker } from '../lib/sticker.js'
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-	if (!text) throw `📮 _Kirim teks_\n\n📌Contoh *${usedPrefix + command}* Slime Bulan t`
-    //conn.sendFile(m.chat, global.API('xteam', '/attp', { file: '', text }), 'attp.webp', '', m, false, { asSticker: true })
-     let stiker = await sticker(null, global.API('xteam', '/attp', { file: '', text }), global.packname, global.author)
-    if (stiker) return conn.sendFile(m.chat, stiker, 'sticker.webp', '', m )
-    throw stiker.toString()
+let handler = async (m, { conn, text }) => {
+    let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
+    conn.sendFile(m.chat, global.API('xteam', '/attp', { file: '', text: teks }), 'attp.webp', '', m, false, { asSticker: true })
 }
 handler.help = ['attp (text)']
 handler.tags = ['sticker']
-handler.command = ['attp'] 
-handler.limit = true
+
+handler.command = /^attp$/i
 
 export default handler
