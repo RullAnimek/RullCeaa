@@ -11,8 +11,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!url) throw 'Tidak bisa mendownload video!'
     conn.sendHydrated(m.chat, `No Watermark Tiktok Video` : ''}`, await (await fetch(url)).buffer(),
         url, '📮 s ᴏ ᴜ ʀ ᴄ ᴇ', null, null, [
-        ['💸 Donasi', `.donasi`],
-        ['📜 Menu', `.menu`],
+        ['Donasi', `.donasi`],
+        ['Menu', `.menu`],
         [null, null]], m)
 }
 handler.help = ['tiktok', 'tiktok', 'tiktokdl'].map(v => v + ' <url>')
