@@ -3,7 +3,7 @@ let handler = async (m, { conn, usedPrefix }) => conn.sendButton(m.chat, `“${b
 handler.help = ['bucin']
 handler.tags = ['quotes']
 handler.command = /^(bucin)$/i
-
+handler.limit = true
 export default handler
 
 
