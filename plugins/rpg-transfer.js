@@ -2,7 +2,7 @@ const items = [
     'money', 'bank', 'potion', 'trash', 'wood',
     'rock', 'string', 'petFood', 'emerald',
     'diamond', 'gold', 'iron', 'common',
-    'uncommon', 'mythic', 'legendary', 'pet',
+    'uncommon', 'mythic', 'legendary', 'pet', 'limit',
 ]
 let confirmation = {}
 async function handler(m, { conn, args, usedPrefix, command }) {
@@ -10,7 +10,7 @@ async function handler(m, { conn, args, usedPrefix, command }) {
     let user = global.db.data.users[m.sender]
     const item = items.filter(v => v in user && typeof user[v] == 'number')
     let lol = `Use format ${usedPrefix}${command} [type] [value] [number]
-example ${usedPrefix}${command} money 9999 @621927237001
+example ${usedPrefix}${command} money 9999 @62×××××
 
 📍 Transferable items
 ${item.map(v => `${rpg.emoticon(v)}${v}`.trim()).join('\n')}
@@ -60,11 +60,11 @@ handler.before = async m => {
         let _previous = _user[type] * 1
         user[type] -= count * 1
         _user[type] += count * 1
-        if (previous > user[type] * 1 && _previous < _user[type] * 1) m.reply(`*––––––『 TRANSFER 』––––––*\n*📊 Status:* Succes\n*🗂️ Type:* ${type}${special(type)} ${rpg.emoticon(type)}\n*🧮 Count:* ${count}\n*📨 To:* @${(to || '').replace(/@s\.whatsapp\.net/g, '')}`, null, { mentions: [to] })
+        if (previous > user[type] * 1 && _previous < _user[type] * 1) m.reply(`*––––––『 TRANSFER 』––––––*\n*📌 Status:* Succes\n*🗂️ Type:* ${type}${special(type)} ${rpg.emoticon(type)}\n*📜 Count:* ${count}\n*📨 To:* @${(to || '').replace(/@s\.whatsapp\.net/g, '')}`, null, { mentions: [to] })
         else {
             user[type] = previous
             _user[type] = _previous
-            m.reply(`*––––––『 TRANSFER 』––––––*\n*📊 Status:* Failted\n*📍 Item:* ${count} ${rpg.emoticon(type)}${type}${special(type)}\n*📨 To:* @${(to || '').replace(/@s\.whatsapp\.net/g, '')}`, null, { mentions: [to] })
+            m.reply(`*––––––『 TRANSFER 』––––––*\n*⭐ Status:* Failted\n*🗃️ Item:* ${count} ${rpg.emoticon(type)}${type}${special(type)}\n*📨 To:* @${(to || '').replace(/@s\.whatsapp\.net/g, '')}`, null, { mentions: [to] })
         }
         clearTimeout(timeout)
         delete confirmation[sender]
@@ -74,8 +74,8 @@ handler.before = async m => {
 handler.help = ['transfer', 'tf'].map(v => v + ' [type] [jumlah] [@tag]')
 handler.tags = ['rpg']
 handler.command = /^(transfer|tf)$/i
-
 handler.disabled = false
+handler.group = true
 
 export default handler
 
