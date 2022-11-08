@@ -13,9 +13,9 @@ await conn.reply(m.chat, list, 0, {
     mediaUrl: '',
     mediaType: 2,
     title: global.wm, 
-    body: 'Ini Aku Saranin Kak',  
+    body: 'Slime Bot WhatsApp',  
     sourceUrl: sgc, 
-    thumbnail: await (await fetch(`https://i.ibb.co/jfZVKmC/babi2.jpg`)).buffer()
+    thumbnail: await (await fetch(`https://telegra.ph/file/dd14654a9c4105a9a7a75.jpg`)).buffer()
       }}
      })
 }    
