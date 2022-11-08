@@ -65,7 +65,7 @@ handler.before = async m => {
         else {
             user[type] = previous
             _user[type] = _previous
-            m.reply(`*––––––『 TRANSFER 』––––––*\n*⭐ Status:* Failted\n*🗃️ Item:* ${count} ${rpg.emoticon(type)}${type}${special(type)}\n*📨 To:* @${(to || '').replace(/@s\.whatsapp\.net/g, '')}`, null, { mentions: [to] })
+            m.reply(`*––––––『 TRANSFER 』––––––*\n*👀 Status:* Gagal/Error\n*🗃️ Item:* ${count} ${rpg.emoticon(type)}${type}${special(type)}\n*📨 To:* @${(to || '').replace(/@s\.whatsapp\.net/g, '')}`, null, { mentions: [to] })
         }
         clearTimeout(timeout)
         delete confirmation[sender]
