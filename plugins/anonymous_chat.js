@@ -13,13 +13,13 @@ async function handler(m, { command }) {
             if (command === 'leave') break
         }
         case 'start': {
-            if (Object.values(this.anonymous).find(room => room.check(m.sender))) return this.sendButton(m.chat, '_Kamu masih berada di dalam anonymous chat, menunggu partner_', author, null, [['Leave/Keluar 🚪', `.leave`]], m)
+            if (Object.values(this.anonymous).find(room => room.check(m.sender))) return this.sendButton(m.chat, '_Kamu masih berada di dalam anonymous chat, menunggu partner_', author, null, [['Keluar', `.leave`]], m)
             let room = Object.values(this.anonymous).find(room => room.state === 'WAITING' && !room.check(m.sender))
             if (room) {
-                await this.sendButton(room.a, '_🙈 Partner ditemukan!_\n\nKetik #leave untuk keluar\nKetik #skip untuk skip\n', author, null, [['Leave 🚪', `.leave`]], m)
+                await this.sendButton(room.a, '_🙈 Partner ditemukan!_\n\nKetik #leave untuk keluar\nKetik #skip untuk skip\n', author, null, [['Keluar', `.leave`]], m)
                 room.b = m.sender
                 room.state = 'CHATTING'
-                await this.sendButton(room.b, '_🙈 Partner ditemukan!_\n\nKetik #leave untuk keluar\nKetik #skip untuk skip\n', author, null, [['Leave 🚪', `.leave`]], m)
+                await this.sendButton(room.b, '_🙈 Partner ditemukan!_\n\nKetik #leave untuk keluar\nKetik #skip untuk skip\n', author, null, [['Keluar', `.leave`]], m)
             } else {
                 let id = + new Date
                 this.anonymous[id] = {
@@ -34,7 +34,7 @@ async function handler(m, { command }) {
                         return who === this.a ? this.b : who === this.b ? this.a : ''
                     },
                 }
-                await this.sendButton(m.chat, '_Mohon tunggu sedang mencarikan partner 🔎_', author, null, [['Leave 🚪', `.leave`]], m)
+                await this.sendButton(m.chat, '_Mohon tunggu sedang mencarikan partner 🔎_', author, null, [['Keluar', `.leave`]], m)
             }
             break
         }
