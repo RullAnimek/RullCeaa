@@ -8,7 +8,7 @@ async function handler(m, { command }) {
             if (!room) return this.sendButton(m.chat, '_kamu sedang tidak berada di anonymous chat_\n\nKetik #start untuk memulai Anonymous Chat', author, null, [['Start 🔎', `.start`]], m)
             m.reply('Ok')
             let other = room.other(m.sender)
-            if (other) await this.sendButton(other, '_Partner kamu meninggalkan chat 🙁_', author, null, [['Start 🔎', `.start`]], m)
+            if (other) await this.sendButton(other, '_Partner kamu meninggalkan chat_', author, null, [['Start 🔎', `.start`]], m)
             delete this.anonymous[room.id]
             if (command === 'leave') break
         }
