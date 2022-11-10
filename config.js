@@ -47,12 +47,12 @@ global.psaweria = 'https://saweria.com'
 global.nomorbot = '0'
 global.nomorown = '6285607831412'
 global.namebot = 'Slime Bot [キング]'
-global.nameown = 'Irull'
+global.nameown = 'Sho'
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6285607831412', 'Irull', 'true']
+  ['6285607831412', 'Sho', 'true']
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -102,10 +102,10 @@ global.bear = 'VBkM7rbU'
 
 
 /*============== WATERMARK ==============*/
-global.wm = 'Slime Bot Whatsapp\nSimpleBot By Irull' //Main Watermark
+global.wm = 'Slime Bot Whatsapp\nSimpleBot By Sho' //Main Watermark
 global.wm2 = 'Slime Bot Simple Bot'
-global.wm3 = 'Slime Bot By Irull'
-global.botdate = `⻝ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⻝ 𝗧𝗶𝗺𝗲: ${wktuwib}`
+global.wm3 = 'Slime Bot By Sho'
+global.botdate = `⻝ Tanggal: ${week} ${date}\n⻝ Waktu: ${wktuwib}`
 global.bottime = `⻝ 𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
 global.titlebot = `スライムボット By Irull`
 global.author = 'Slime Bot Whatsapp\nWhatsapp ロボット' 
@@ -126,7 +126,7 @@ global.thumbWarn = 'https://telegra.ph/file/c113367b64684b5268802.jpg'
 global.botintro = 'Hallo, Saya SlimeBot Saya akan membantu Anda kapan pun & Dimana pun :D'
 global.intro = 'https://telegra.ph/file/0546d0a22559d832ed630.jpg'
 /*============== GLOBAL BIO ==============*/
-global.nameowner = 'Irull'
+global.nameowner = 'Sho'
 global.umurowner = '∞'
 global.asalowner = 'Dark side of Earth'
 global.nomorowner = 'wa.me/6285607831412'
