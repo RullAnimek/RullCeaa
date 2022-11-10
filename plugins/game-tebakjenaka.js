@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let timeout = 120000
-let poin = 4999
+let poin = 100
 let handler = async (m, { conn, command, usedPrefix }) => {
 let imgr = flaaa.getRandom()
 
@@ -13,6 +13,8 @@ let imgr = flaaa.getRandom()
     let res = await fetch('https://anabotofc.herokuapp.com/api/kuis/siapaaku?apikey=AnaBot')
     let json = await res.json()
     let caption = `
+🎮 Tebak Jenaka 🎮
+
 ${json.soal}
 
 Timeout *${(timeout / 1000).toFixed(2)} detik*
@@ -33,6 +35,7 @@ Bonus: ${poin} XP
 handler.help = ['tebakjenaka']
 handler.tags = ['game']
 handler.command = /^tebakjenaka/i
+handler.limit = true
 
 export default handler
 
