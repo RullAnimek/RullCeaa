@@ -21,6 +21,8 @@ ${json.soal}
 Waktu *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}hkal untuk bantuan
 Bonus: ${poin} XP
+
+⚠️ Reply pesan ini untuk menjawab soal ⚠️
     `.trim()
     conn.tebakkalimat[id] = [
         await conn.sendButton(m.chat, caption, author, `${imgr + command}`, buttons, m),
@@ -40,5 +42,5 @@ handler.limit = true
 export default handler
 
 const buttons = [
-    ['Bantuan', '/hkal'],
+    ['Bantuan ❔', '/hkal'],
 ]
