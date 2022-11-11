@@ -20,13 +20,15 @@ Logo apakah ini?
 Waktu *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}hgame untuk bantuan
 Bonus: ${poin} XP
+
+⚠️ Reply pesan ini untuk menjawab soal ⚠️
     `.trim()
     conn.tebakgame[id] = [
         await conn.sendButton(m.chat, caption, author, json.img, buttons, m),
         json, poin,
         setTimeout(() => {
             if (conn.tebakgame[id]) conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, author, null, [
-                ['tebakgame', '/tebakgame']
+                ['Tebak Game 🎮', '/tebakgame']
             ], conn.tebakgame[id][0])
             delete conn.tebakgame[id]
         }, timeout)
