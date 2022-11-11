@@ -34,7 +34,7 @@ Hadiah: ${poin} XP
 handler.help = ['tebakkabupaten']
 handler.tags = ['game']
 handler.command = /^tebakkabupaten/i
-handler.limit
+handler.limit = true
 export default handler
 
 const buttons = [
