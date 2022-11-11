@@ -2,7 +2,6 @@ import fetch from 'node-fetch'
 
 let timeout = 180000
 let money = 100
-let limit = 1
 let handler = async (m, { conn, usedPrefix }) => {
     conn.susunkata = conn.susunkata ? conn.susunkata : {}
     let id = m.chat
@@ -18,11 +17,12 @@ let handler = async (m, { conn, usedPrefix }) => {
 Soal:
 ${json.soal}
 
-📮Tipe : ${json.tipe}
-⏳Waktu *${(timeout / 1000).toFixed(2)} detik*
-💬Ketik ${usedPrefix}suska untuk bantuan
-➕Bonus: ${money} Money
-🎟️Limit: ${limit} Limit
+❔ Tipe : ${json.tipe}
+⏱️ Waktu *${(timeout / 1000).toFixed(2)} detik*
+📌 Ketik ${usedPrefix}suska untuk bantuan
+💸 Bonus: ${money} Money
+
+⚠️ Reply pesan ini untuk menjawab soal ⚠️
 `.trim()
     conn.susunkata[id] = [
         await conn.reply(m.chat, caption, m),
