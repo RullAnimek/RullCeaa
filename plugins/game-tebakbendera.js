@@ -16,6 +16,8 @@ let handler = async (m, { conn, usedPrefix }) => {
 Waktu *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}hben untuk bantuan
 Bonus: ${poin} XP
+
+⚠️ Reply pesan ini untuk menjawab soal ⚠️
     `.trim()
     conn.tebakbendera[id] = [
         await conn.sendButton(m.chat, caption, author, json.img, buttons, m),
@@ -31,9 +33,9 @@ Bonus: ${poin} XP
 handler.help = ['tebakbendera']
 handler.tags = ['game']
 handler.command = /^tebakbendera/i
-
+handler.limit = true
 export default handler
 
 const buttons = [
-    ['Bantuan', '/hben'],
+    ['Bantuan ❔', '/hben'],
 ]
