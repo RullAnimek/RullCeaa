@@ -13,6 +13,8 @@ async function handler(m) {
 *Soal:* ${json.soal}
 Terdapat *${json.jawaban.length}* jawaban${json.jawaban.find(v => v.includes(' ')) ? `
 (beberapa jawaban terdapat spasi)
+
+⚠️ Reply pesan ini untuk menjawab soal ⚠️
 `: ''}
 +${winScore} XP tiap jawaban benar
     `.trim()
