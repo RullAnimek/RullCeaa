@@ -21,6 +21,8 @@ ${json.soal}
 Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}hsia untuk bantuan
 Bonus: ${poin} XP
+
+⚠️ Reply pesan ini untuk menjawab soal ⚠️
     `.trim()
     conn.tebaksiapa[id] = [
         await conn.sendButton(m.chat, caption, author, `${imgr + command}`, buttons, m),
