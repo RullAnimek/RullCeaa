@@ -20,6 +20,8 @@ Waktu *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}teka untuk bantuan
 
 Hadiah: ${poin} XP
+
+⚠️ Reply pesan ini untuk menjawab soal ⚠️
 `.trim()
     conn.tebakkata[id] = [
         await conn.sendButton(m.chat, caption, author, ['❔ Bantuan', `${usedPrefix}teka`], m),
