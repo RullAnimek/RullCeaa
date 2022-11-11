@@ -14,7 +14,7 @@ handler.admin = false
 handler.botAdmin = false
 
 handler.fail = null
-handler.limit = false
+handler.limit = true
 
 export default handler 
 
@@ -38,9 +38,9 @@ global.tolol = [
 'Tolol Level : 77%\n\nGak akan Salah Lagi dah tololnya lu',
 'Tolol Level : 83%\n\nDijamin tololnyan',
 'Tolol Level : 89%\n\nTolol Banget!',
-'Tolol Level : 94%\n\nSetolol Om Deddy😂',
-'Tolol Level : 100%\n\nLU ORANG TERTOLOL YANG PERNAH ADA!!!',
-'Tolol Level : 100%\n\nLU ORANG TERTOLOL YANG PERNAH ADA!!!',
-'Tolol Level : 100%\n\nLU ORANG TERTOLOL YANG PERNAH ADA!!!',
-'Tolol Level : 100%\n\nLU ORANG TERTOLOL YANG PERNAH ADA!!!',
+'Tolol Level : 94%\n\nTerlalu Tolol',
+'Tolol Level : 100%\n\nLU ORANG TERTOLOL YANG PERNAH ADA HAHAHAHAHA',
+'Tolol Level : 100%\n\nLU ORANG TERTOLOL YANG PERNAH ADA AOWKWOWKWO',
+'Tolol Level : 100%\n\nLU ORANG TERTOLOL YANG PERNAH ADA WKWKWKW',
+'Tolol Level : 100%\n\nLU ORANG TERTOLOL YANG PERNAH ADA :V',
 ]
