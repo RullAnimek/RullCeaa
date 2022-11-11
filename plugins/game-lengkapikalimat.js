@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let timeout = 120000
-let poin = 4999
+let poin = 100
 let handler = async (m, { conn, command, usedPrefix }) => {
 let imgr = flaaa.getRandom()
 
@@ -13,11 +13,14 @@ let imgr = flaaa.getRandom()
     let src = await (await fetch('https://raw.githubusercontent.com/qisyana/scrape/main/lengkapikalimat.json')).json()
     let json = src[Math.floor(Math.random() * src.length)]
   let caption = `
+🎮 Tebak Kalimat 🎮
   ${json.pertanyaan}
 
 Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}hlen untuk bantuan
 Bonus: ${poin} XP
+
+⚠️ Reply pesan ini untuk menjawab soal ⚠️
     `.trim()
     conn.lengkapikalimat[id] = [
         await conn.sendButton(m.chat, caption, author, `${imgr + command}`, buttons, m),
@@ -33,10 +36,9 @@ Bonus: ${poin} XP
 handler.help = ['lengkapikalimat']
 handler.tags = ['game']
 handler.command = /^lengkapikalimat/i
-
+handler.limit = true
 export default handler
 
 const buttons = [
     ['Hint', '/hlen'],
-    ['Nyerah', 'menyerah']
 ]
