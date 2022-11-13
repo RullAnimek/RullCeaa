@@ -9,7 +9,7 @@ export async function before(m) {
 	else {
 		let imgr = flaaa.getRandom()
 		let txt = `Hai kak @${mf.dari.split('@')[0]}, kamu menerima balasan nih.\n\nPesan yang kamu kirim sebelumnya:\n${mf.pesan}\n\nPesan balasannya:\n${m.text}\n`.trim();
-		await this.sendButton(mf.dari, bottime, txt, `${imgr + 'Menfess'}`, [['Balas Pesan', '.balasmenfess']], null).then(() => {
+		await this.sendButton(mf.dari, bottime, txt, `${imgr + 'Menfess'}`, [['Oke', '.hehe']], null).then(() => {
 			m.reply('Berhasil Mengirim balasan.')
 			delay(1500)
 			delete this.menfess[mf.id]
