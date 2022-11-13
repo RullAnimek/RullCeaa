@@ -7,6 +7,6 @@ await conn.sendButton(m.chat,`Dark ga si adick adick`, wm, res, [['Darkjoke','.d
 handler.help = ['darkjoke']
 handler.tags = ['internet']
 handler.command = /^(darkjoke)$/i
-handler.limit = true
+handler.limit = 5
 
 export default handler
